@@ -1,0 +1,4 @@
+var computerMove, playerMove;
+playerMove = 'Papier';
+computerMove = 'kamieñ';
+printMessage('Zagra³em ' + computerMove + '! Jeœli Twój ruch to ' + playerMove + ', to wygrywasz!');
