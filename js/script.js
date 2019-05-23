@@ -1,5 +1,5 @@
 ﻿
-var  buttonPaper, buttonRock, buttonScissors ;
+let  buttonPaper, buttonRock, buttonScissors ;
 
 buttonRock = document.getElementById('button-rock');
 buttonPaper = document.getElementById('button-paper');
@@ -13,7 +13,7 @@ function buttonClicked(argButtonName) {
     clearMessages();
     console.log(argButtonName + ' został kliknięty');
 
-    var computerMove, playerMove, randomNumber;
+    let computerMove, playerMove, randomNumber;
 
     /**
      * Describe this function...
@@ -50,6 +50,7 @@ function buttonClicked(argButtonName) {
         }
         printMessage('Zagrałem ' + argComputerMove + ', a Ty ' + argPlayerMove);
     }
+
     playerMove = argButtonName;
     console.log('ruch gracza to: ' + playerMove);
     randomNumber = Math.floor(Math.random() * 3 + 1);
